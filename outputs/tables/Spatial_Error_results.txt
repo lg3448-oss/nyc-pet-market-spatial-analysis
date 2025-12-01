@@ -1,0 +1,34 @@
+===== Spatial Error (SEM) model results =====
+
+Call:errorsarlm(formula = pet_store_rate ~ dog_rate + median_income + 
+    pop_density + population + area_km2 + base_pet, data = model_data, 
+    listw = lw, zero.policy = TRUE)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-2.199864 -0.231919 -0.063543  0.132806  5.321384 
+
+Type: error 
+Regions with no neighbours included:
+ 1 1873 1874 2061 
+Coefficients: (asymptotic standard errors) 
+                 Estimate  Std. Error  z value  Pr(>|z|)
+(Intercept)    4.2916e+00  5.4276e-02  79.0691 < 2.2e-16
+dog_rate       3.0191e+00  8.9823e-01   3.3612  0.000776
+median_income  1.1365e-06  5.4356e-07   2.0909  0.036534
+pop_density   -1.8299e-06  1.1820e-06  -1.5481  0.121599
+population    -1.1831e-04  1.5489e-06 -76.3846 < 2.2e-16
+area_km2      -2.9106e-03  1.5060e-03  -1.9326  0.053282
+base_pet       3.7101e-01  2.9290e-03 126.6676 < 2.2e-16
+
+Lambda: 0.13779, LR test value: 15.102, p-value: 0.00010186
+Asymptotic standard error: 0.033665
+    z-value: 4.0931, p-value: 4.2557e-05
+Wald statistic: 16.754, p-value: 4.2557e-05
+
+Log likelihood: -1538.917 for error model
+ML residual variance (sigma squared): 0.21931, (sigma: 0.4683)
+Number of observations: 2325 
+Number of parameters estimated: 9 
+AIC: 3095.8, (AIC for lm: 3108.9)
+

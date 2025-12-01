@@ -1,0 +1,36 @@
+===== Spatial Lag (SLM) model results =====
+
+Call:lagsarlm(formula = pet_store_rate ~ dog_rate + median_income + 
+    pop_density + population + area_km2 + base_pet, data = model_data, 
+    listw = lw, zero.policy = TRUE)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-2.212129 -0.231200 -0.065093  0.129794  5.264913 
+
+Type: lag 
+Regions with no neighbours included:
+ 1 1873 1874 2061 
+Coefficients: (asymptotic standard errors) 
+                 Estimate  Std. Error  z value Pr(>|z|)
+(Intercept)    4.1680e+00  5.9231e-02  70.3681  < 2e-16
+dog_rate       2.2605e+00  8.9526e-01   2.5250  0.01157
+median_income  8.5730e-07  5.3693e-07   1.5967  0.11034
+pop_density   -1.9874e-06  1.1403e-06  -1.7429  0.08135
+population    -1.1856e-04  1.5392e-06 -77.0273  < 2e-16
+area_km2      -3.2936e-03  1.4561e-03  -2.2620  0.02370
+base_pet       3.6956e-01  2.9777e-03 124.1099  < 2e-16
+
+Rho: 0.047937, LR test value: 13.06, p-value: 0.0003017
+Asymptotic standard error: 0.013207
+    z-value: 3.6295, p-value: 0.00028392
+Wald statistic: 13.174, p-value: 0.00028392
+
+Log likelihood: -1539.938 for lag model
+ML residual variance (sigma squared): 0.22012, (sigma: 0.46917)
+Number of observations: 2325 
+Number of parameters estimated: 9 
+AIC: 3097.9, (AIC for lm: 3108.9)
+LM test for residual autocorrelation
+test value: 6.8363, p-value: 0.0089326
+

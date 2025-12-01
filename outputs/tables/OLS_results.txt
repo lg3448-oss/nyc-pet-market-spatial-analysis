@@ -1,0 +1,26 @@
+===== OLS model results =====
+
+Call:
+lm(formula = pet_store_rate ~ dog_rate + median_income + pop_density + 
+    population + area_km2 + base_pet, data = model_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.2126 -0.2316 -0.0607  0.1344  5.3154 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    4.278e+00  5.081e-02  84.197  < 2e-16 ***
+dog_rate       2.746e+00  8.868e-01   3.096  0.00198 ** 
+median_income  1.211e-06  5.312e-07   2.281  0.02265 *  
+pop_density   -1.759e-06  1.144e-06  -1.538  0.12426    
+population    -1.180e-04  1.541e-06 -76.591  < 2e-16 ***
+area_km2      -3.623e-03  1.461e-03  -2.480  0.01322 *  
+base_pet       3.724e-01  2.892e-03 128.773  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4713 on 2318 degrees of freedom
+Multiple R-squared:  0.9038,	Adjusted R-squared:  0.9035 
+F-statistic:  3628 on 6 and 2318 DF,  p-value: < 2.2e-16
+

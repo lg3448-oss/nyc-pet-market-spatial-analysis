@@ -1,0 +1,5 @@
+===== AIC comparison (OLS vs Lag vs Error) =====
+            df      AIC
+ols_model    8 3108.936
+lag_model    9 3097.877
+error_model  9 3095.835
